@@ -17,7 +17,10 @@ app.use(cookieParser());
 
 
 // import routes 
+import productRouter from "./routes/product.route.js";
 
+// declare routes
+app.use("/api/v1/products", productRouter)
 
 
 

@@ -20,10 +20,9 @@ const productSchema = new Schema(
         },
         image:{
             type: String,
-            required: true
         }
     },
     {timestamps: true}
 );
 
-export const product = mongoose.model('Product', productSchema);
+export const Product = mongoose.model('Product', productSchema);
